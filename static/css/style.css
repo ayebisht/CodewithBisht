@@ -1,0 +1,713 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.max-width {
+    max-width: 1300px;
+    padding: 0;
+    margin: auto;
+}
+
+/* navbar styling start */
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    padding: 15px 0;
+    background: black;
+    z-index: 999;
+}
+
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.navbar .logo a span {
+    color: crimson;
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover {
+    color: crimson;
+}
+
+/* navbar styling end */
+
+/* home styling start */
+
+.home {
+    display: flex;
+    background: black no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+}
+
+.home .max-width {
+    margin: auto 0 auto 40px;
+}
+
+.home .home-content .text-1 {
+    font-size: 27px;
+}
+
+.home .home-content .text-2 {
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.home .home-content .text-3 {
+    font-size: 27px;
+    margin: 5px 0;
+}
+
+.home .home-content .text-3 span {
+    color: crimson;
+    font-weight: 500;
+}
+
+.home .home-content a {
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+
+/* home styling end */
+
+/* similar content styling Start */
+
+section {
+    padding: 100px 0;
+}
+
+section .title {
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+
+section .title::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 150px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+
+section .title::after {
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+/* similar content styling End */
+
+/* about styling start */
+
+.about .title::after {
+    content: "who am i";
+}
+
+.about .about-content,
+.services .serv-content,
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .about-content .left {
+    width: 45%;
+}
+
+.about .about-content .left img {
+    height: 400px;
+    width: 375px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.about .about-content .right {
+    width: 55%;
+}
+
+.about .about-content .right .text {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about .about-content .right .text span {
+    color: crimson;
+}
+
+.about .about-content .right p {
+    text-align: justify;
+}
+
+.about .about-content .right a {
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+
+.about .about-content .right a:hover {
+    color: crimson;
+    background: none;
+}
+
+/* about styling end */
+
+/* services styling Start */
+
+.services {
+    color: #fff;
+    background: #111;
+}
+
+.services .title::before {
+    background: #fff;
+}
+
+.services .title::after {
+    background: #111;
+    content: "what I provide";
+}
+
+.services .serv-content .card {
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.services .serv-content .card:hover {
+    background: crimson;
+}
+
+.services .serv-content .card .box {
+    transition: all 0.3s ease;
+}
+
+.services .serv-content .card:hover .box {
+    transform: scale(1.05);
+}
+
+.services .serv-content .card i {
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+
+.services .serv-content .card a {
+    font-size: 16.5px;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.services .serv-content .card:hover i {
+    color: #fff;
+}
+
+.services .serv-content .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+/* services styling End */
+
+/* Teams Start */
+
+.teams .title::after {
+    content: "Who with me";
+}
+
+.teams .carouse1 .card {
+    background: rgb(245, 242, 242);
+    border-radius: 6px;
+    padding: 25px 35px;
+    transition: all 0.3s ease;
+}
+
+.teams .carouse1 .card:hover {
+    background: crimson;
+    transform: scale(1.05);
+}
+
+.teams .carouse1 .card:hover .box {
+    transform: scale(1.00);
+}
+
+.teams .carouse1 .card .box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.teams .carouse1 .card .text {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+    padding: 20px;
+}
+
+.teams .carouse1 .card img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid crimson;
+    transition: all 0.3s ease;
+}
+
+.teams .carouse1 .card:hover img {
+    border-color: #fff;
+}
+
+.teams .carouse1 .right a {
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+
+.teams .carouse1 .right a:hover {
+    color: crimson;
+    background: none;
+}
+
+/* Teams End */
+
+/* Contact Me Start */
+
+.contact .title::after {
+    content: "Get in Touch";
+}
+
+.contact .contact-content .column {
+    width: calc(50% - 30px);
+}
+
+.contact .contact-content .right text {
+    font-size: 1px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contact .contact-content .left p {
+    text-align: justify;
+}
+
+.contact .contact-content .left .icons {
+    margin: 10px 0;
+}
+
+.contact .contact-content .row {
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+
+.contact .contact-content .row .info {
+    margin-left: 30px;
+}
+
+.contact .contact-content .row i {
+    font-size: 20px;
+    color: crimson;
+}
+
+.contact .contact-content .info .head {
+    font-weight: bold;
+}
+
+.contact .contact-content .info .sub-title {
+    color: #333;
+}
+
+.contact .right form .fields {
+    display: flex;
+}
+
+.contact .right form .field,
+.contact .right form .fields .field {
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.contact .right form .textarea {
+    height: 80px;
+}
+
+.contact .right form .name {
+    margin-right: 10px;
+}
+
+.contact .right form .email {
+    margin-left: 10px;
+
+}
+
+.contact .right form .field input,
+.contact .right form .textarea textarea {
+    height: 100%;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+}
+
+/* Contact Me End */
+
+/* Footer styling Start */
+
+footer {
+    background: #111;
+    padding: 20px 23px;
+    color: #fff;
+}
+
+footer span a {
+    color: crimson;
+    text-decoration: none;
+}
+
+footer span a:hover {
+    text-decoration: underline;
+}
+
+/* Footer styling End */
+
+/* Create styling start */
+
+.port-container .port-box .port {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.port-text {
+    text-align: center;
+}
+
+#create {
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+
+#create:hover {
+    color: crimson;
+    background: none;
+}
+
+/* Create styling end */
+
+/* user start */
+.user {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    padding-top: 100px;
+}
+
+.user .user-box {
+    width: calc(33% - 20px);
+    background: rgba(241, 237, 237, 0.434);
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.user .user-box i {
+    font-size: 30px;
+    color: crimson;
+}
+
+.user .user-box .user-text {
+    font-size: 17px;
+}
+
+.user .user-box img {
+    height: 180px;
+    width: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid crimson;
+    transition: all 0.3s ease;
+}
+
+.usercontainer .card .box text {
+    color: crimson;
+}
+
+/* user end */
+
+/* web start */
+
+.web {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    padding-top: 100px;
+}
+
+.web .web-box {
+    width: calc(33% - 20px);
+    background: rgba(241, 237, 237, 0.434);
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.web .web-box i {
+    font-size: 30px;
+    color: crimson;
+}
+
+.web .web-box .web-text {
+    font-size: 25px;
+}
+
+#book {
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+
+#book:hover {
+    color: crimson;
+    background: none;
+}
+
+/* web end */
+
+/* Book start */
+
+* {
+    margin: px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.blogr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.blogr-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#register {
+    transition: .5s;
+    width: 100%;
+    height: 35px;
+    border: none;
+    border-radius: 6px;
+    background-color: rgba(220, 20, 60, 0.455);
+    color: white;
+}
+
+#register:hover {
+    color: #fff;
+    background: crimson;
+}
+
+.blogr-heading h3 {
+    font-size: 2rem;
+    color: crimson;
+    font-weight: 600;
+}
+
+.blogr-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+.blogr-box {
+    width: 325px;
+    background-color: #ffffff;
+    border: 1px solid #00043a;
+    margin: 20px;
+}
+
+.center form {
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+form .txt_field {
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+
+.txt_field input {
+    width: 100%;
+    padding: 0 5px;
+    height: 25px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.txt_field label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.txt_field span::before {
+    content: '';
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: crimson;
+    transition: .5s;
+}
+
+.txt_field input:focus~label,
+.txt_field input:valid~label {
+    top: -5px;
+    color: crimson;
+}
+
+.txt_field input:focus~span::before,
+.txt_field input:valid~span::before {
+    width: 100%;
+}
+
+.center a {
+    color: #023047;
+}
+
+.center a:hover {
+    color: #62b6cb;
+    transition: all ease 0.3s;
+}
+
+/* Book end */
+
+/* Book done start  */
+
+.bookdone .book-text {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.bookdone .book-text .h3 {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.bookdone .book-text .img {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Book done end  */

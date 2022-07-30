@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <!--------- Awesome Fonts ------------>
+    <script src="https://kit.fontawesome.com/8f8794589b.js" crossorigin="anonymous"></script>
+
+    <!--------- Custom Style ------------->
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+    <!----------------------- Navigation Start ---------------------------->
+
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo">
+                <a href="/">Code<span>Rush</span></a>
+            </div>
+            <ul class="menu">
+                <li class="nav-link">
+                    <a href="/home">Home</a>
+                </li>
+                <li class="nav-link">
+                    <a href="/about">About</a>
+                </li>
+                <li class="nav-link">
+                    <a href="/services">Services</a>
+                </li>
+                <li class="nav-link">
+                    <a href="/allpost">Teams</a>
+                </li>
+                <li class="nav-link">
+                    <a href="/contact">ContactUs</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-------x-------x-------- Navigation End ------x----------x----------->
+
+    <!----------------------- Userpost Container Start --------------------->
+    <section>
+        <div class="user">
+            <div class="user-box">
+                <img src="https://images.unsplash.com/photo-1483995564125-85915c11dcfe?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=641"
+                    alt="img1" width="150px" height="150px">
+
+                <div class="user-text">
+                    <br><h3 class="userhead">Name</h3>
+                    <p id="first">{{data[0][1]}}</p><br>
+                    <h3 class="usercontent">Descriptions</h3>
+                    <p>{{data[0][2]}}</p><br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A soluta amet officia blanditiis!
+                        Recusandae,
+                        atque blanditiis porro obcaecati aut a tempore, repudiandae vitae reprehenderit vero laborum
+                        minima
+                        optio odio mollitia illo vel maxime beatae! A itaque aspernatur perferendis sunt autem
+                        cupiditate
+                        omnis
+                        vitae eveniet earum. Soluta quam quae magni delectus in doloremque enim expedita labore numquam,
+                        quo,
+                        repellat non totam officia perspiciatis sunt aliquid voluptatem hic, nam quisquam recusandae?
+                        Dolor,
+                        fugiat. Id eos debitis animi temporibus aperiam est eaque libero beatae cum aliquid distinctio
+                        illum
+                        maxime consequatur, tempore incidunt omnis? Asperiores ullam aperiam deserunt pariatur obcaecati
+                        aspernatur sequi quam impedit dolorum! Veritatis laborum officia modi eligendi. Sunt minima
+                        laborum
+                        fugit reprehenderit asperiores, minus pariatur possimus nobis ipsum dignissimos consectetur
+                        illum
+                        quasi
+                        quaerat, incidunt numquam, aliquam assumenda nam? Maiores, dolores? Exercitationem culpa, neque
+                        natus
+                        dolor libero tempore distinctio dolores veritatis perferendis quibusdam assumenda voluptates
+                        fugiat
+                        quidem illum, aliquam accusamus similique. Beatae sunt, adipisci consequuntur esse laudantium
+                        aliquam
+                        veniam. Obcaecati reprehenderit nisi omnis, enim corporis porro culpa sint suscipit atque
+                        laudantium
+                        voluptatibus aut dolor accusantium dicta qui quae molestias maiores consectetur necessitatibus.
+                        Ipsum
+                        nisi omnis fuga placeat fugiat, nam asperiores repellendus voluptatem corrupti tenetur voluptas
+                        quis
+                        commodi saepe atque unde explicabo tempora?
+                    </p>
+
+                    <!-- back button start -->
+
+                    <section class="port">
+                        <div class="port-heading">
+                            <a href="/#teams">Back</a>
+                        </div>
+                    </section>
+
+                    <!-- back button end -->
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------------------------- Userpost Container End -------------------------------->
+
+
+
+
+
+</body>
+
+</html>

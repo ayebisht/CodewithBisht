@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <!--------- Awesome Fonts ------------>
+    <script src="https://kit.fontawesome.com/8f8794589b.js" crossorigin="anonymous"></script>
+
+    <!--------- Custom Style ------------->
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+    <!----------------------- Navigation Start ---------------------------->
+
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo">
+                <a href="/">Code<span>Rush</span></a>
+            </div>
+            <ul class="menu">
+                <li class="nav-link">
+                    <a href="/home">Home</a>
+                </li>
+                <li class="nav-link">
+                    <a href="/about">About</a>
+                </li>
+                <li class="nav-link">
+                    <a href="/services">Services</a>
+                </li>
+                <li class="nav-link">
+                    <a href="/allpost">Teams</a>
+                </li>
+                <li class="nav-link">
+                    <a href="/contact">ContactUs</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-------x-------x-------- Navigation End ------x----------x----------->
+
+    <!----------------------- Register Container Start --------------------->
+
+    <section>
+        <div class="blogr-container">
+
+            <!-- box 1 -->
+
+            <div class="blogr-box">
+
+                <!-- Register page -->
+
+                <section class="blogr">
+                    <div class="blogr-heading">
+                        <h3>Edit Team Members</h3>
+                    </div>
+                </section>
+
+                <!-- text -->
+
+                <div class="center">
+                    <form action="/update/{{data[0]}}" method="post">
+
+                        <div class="txt_field">
+                            <input type="text" name="name" value="{{data[1]}}" required>
+                            <span></span>
+                            <label>Full Name</label>
+                        </div>
+
+                        <div class="txt_field">
+                            <input type="text" name="username" placeholder="Description" value="{{data[2]}}" required>
+                            <span></span>
+                            <label>Description</label>
+                        </div>
+
+                        <input type="submit" value="Update" id="create"><br><br>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- back button start -->
+
+        <div class="web">
+            <div class="web-box">
+                <a href="/#teams">Home</a>
+            </div>
+        </div>
+
+        <!-- back button End -->
+        
+    </section>
+
+    <!------------------------- Register Container End -------------------------------->

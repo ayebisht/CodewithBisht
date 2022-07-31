@@ -2,7 +2,6 @@
 ![Screenshot (34)](https://user-images.githubusercontent.com/109788233/181926117-31d89da4-0232-4296-9b74-2d1073054558.png)
 ![Screenshot (33)](https://user-images.githubusercontent.com/109788233/181926067-c408c1fc-4e2c-4f35-a667-3e5b9b6973bb.png)
 
-
 # CodewithBisht
 I have developed a website with Python language using Pymsql to connect Mysql DB, for website coding &amp; beatification I have used Html &amp; Css, Flask was used for framework of the website.
 
